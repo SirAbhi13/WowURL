@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    'graphene_django',
+    "graphene_django",
     "shortener",
 ]
 
@@ -76,20 +76,13 @@ WSGI_APPLICATION = "WowURL.wsgi.application"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-
-        'NAME': 'WowURL',
-
-        'USER': 'postgres',
-
-        'PASSWORD': '1312',
-
-        'HOST': 'localhost',
-
-        'PORT': '5432',
-
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "WowURL",
+        "USER": "postgres",
+        "PASSWORD": "1312",
+        "HOST": "localhost",
+        "PORT": "5432",
     }
 }
 
@@ -135,6 +128,4 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-GRAPHENE = {
-    'SCHEMA': 'WowURL.schema.schema' # Where your Graphene schema lives
-}
+GRAPHENE = {"SCHEMA": "WowURL.schema.schema"}  # Where your Graphene schema lives
